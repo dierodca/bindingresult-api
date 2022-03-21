@@ -11,6 +11,7 @@ import co.com.carvajal.platform.crosscutting.patterns.interfaces.IRestResponse;
 import lombok.AccessLevel;
 import lombok.NoArgsConstructor;
 
+/** @author dierodca */
 @NoArgsConstructor(access = AccessLevel.PRIVATE)
 public class ResponseEntityUtil {
 

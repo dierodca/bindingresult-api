@@ -89,7 +89,7 @@ sonarqube {
         property "sonar.projectKey", "bindingresult-api"
         property "sonar.language", "java"
         property "sonar.jacoco.reportPath", "${buildDir}/jacoco/test.exec"
-		property "sonar.host.url", "https://sonar.carvajal.com"
+		property "sonar.host.url", "http://localhost:9000"
 		property "sonar.coverage.exclusions", sonarExcludesPackages
 		property "sonar.exclusions", sonarExcludesPackages										   
     }

@@ -8,6 +8,7 @@ import co.com.carvajal.platform.crosscutting.domain.exceptions.InvalidRequestExc
 import lombok.AccessLevel;
 import lombok.NoArgsConstructor;
 
+/** @author dierodca */
 @NoArgsConstructor(access = AccessLevel.PRIVATE)
 public class ValidationUtil {
 

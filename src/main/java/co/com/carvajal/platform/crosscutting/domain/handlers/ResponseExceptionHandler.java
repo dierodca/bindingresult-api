@@ -11,6 +11,7 @@ import co.com.carvajal.platform.crosscutting.domain.exceptions.InvalidRequestExc
 import co.com.carvajal.platform.crosscutting.patterns.interfaces.IRestResponse;
 import co.com.carvajal.platform.crosscutting.util.ResponseEntityUtil;
 
+/** @author dierodca */
 @RestController
 @ControllerAdvice
 public class ResponseExceptionHandler extends ResponseEntityExceptionHandler {

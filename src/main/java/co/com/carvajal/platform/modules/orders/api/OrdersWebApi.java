@@ -10,6 +10,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import co.com.carvajal.foundation.framework.exceptions.EBusinessApplicationException;
 import co.com.carvajal.platform.crosscutting.domain.RequestDS;
+import co.com.carvajal.platform.crosscutting.patterns.interfaces.IRestResponse;
+import co.com.carvajal.platform.crosscutting.util.ResponseEntityUtil;
 import co.com.carvajal.platform.crosscutting.util.ValidationUtil;
 import lombok.extern.log4j.Log4j2;
 
@@ -28,13 +30,15 @@ import lombok.extern.log4j.Log4j2;
 public class OrdersWebApi {
 
   @GetMapping("")
-  public ResponseEntity<String> listOrders(
+  public ResponseEntity<IRestResponse<String>> listOrders(
       @Valid @RequestBody final RequestDS requestDS, final BindingResult result)
       throws EBusinessApplicationException {
 
     log.debug("init check active orders");
     ValidationUtil.validateBindingResult(result);
 
-    return ResponseEntity.ok("Proceso ejecutado con exito");
+    // return ResponseEntity.ok("Proceso ejecutado con exito");
+
+    return ResponseEntityUtil.createSuccessfulResponse("EXITO", 200, "Proceso ejecutado con exito");
   }
 }

@@ -5,6 +5,10 @@ import co.com.carvajal.platform.crosscutting.domain.ResponseStatus;
 import co.com.carvajal.platform.crosscutting.patterns.interfaces.IRestResponse;
 import lombok.Setter;
 
+/**
+ * @author dierodca
+ * @param <T>
+ */
 @Setter
 public class RestResponse<T> implements IRestResponse<T> {
 

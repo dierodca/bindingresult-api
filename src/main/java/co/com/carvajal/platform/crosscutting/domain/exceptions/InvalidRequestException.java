@@ -3,6 +3,7 @@ package co.com.carvajal.platform.crosscutting.domain.exceptions;
 import java.util.List;
 import co.com.carvajal.platform.crosscutting.domain.ValidationError;
 
+/** @author dierodca */
 public class InvalidRequestException extends RuntimeException {
 
   private static final long serialVersionUID = 5986087872673515973L;

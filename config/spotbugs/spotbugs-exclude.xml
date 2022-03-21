@@ -8,4 +8,7 @@
 	<Match>
 		<Package name="co.com.carvajal.platform.crosscutting.persistence.entity.*" />
 	</Match>
+	<Match>
+		<Package name="co.com.carvajal.platform.crosscutting.domain.*" />
+	</Match>
 </FindBugsFilter>    
